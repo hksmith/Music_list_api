@@ -9,29 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // Define some sample playlist data
-let playlist = [
-    {
-        "title": "Song 1",
-        "artist": "Artist 1",
-        "album": "Oldies",
-        "duration": 3,
-        "genre": "slow"
-    },
-    {
-        "title": "Song 2",
-        "artist": "Artist 2",
-        "album": "Oldies",
-        "duration": 4,
-        "genre": "slow"
-    },
-    {
-        "title": "Song 3",
-        "artist": "Artist 3",
-        "album": "Oldies",
-        "duration": 5,
-        "genre": "slow"
-    }
-];
+let playlist = [];
 
 // Get all songs
 app.get('/api/playlist', (req, res) => {
